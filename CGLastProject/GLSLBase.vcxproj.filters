@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="FragShader.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="VertexShader.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Polygons.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Robot.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="States.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Item.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="targetver.h">
+      <Filter>페더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="FragShader.hpp">
+      <Filter>페더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="ShaderProgram.hpp">
+      <Filter>페더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="VertexShader.hpp">
+      <Filter>페더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="FrameWork.hpp">
+      <Filter>페더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Polygons.hpp">
+      <Filter>페더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Robot.hpp">
+      <Filter>페더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="States.hpp">
+      <Filter>페더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Item.hpp">
+      <Filter>페더 파일</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="소스 파일">
+      <UniqueIdentifier>{a7fcb93d-3717-43ab-b316-e9d0ce5b8225}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="페더 파일">
+      <UniqueIdentifier>{281c75ca-d516-457d-94dd-38314bf09c82}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="셰이더 파일">
+      <UniqueIdentifier>{67bf60d2-2daa-4412-a92a-1ef604d4703f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Shaders\T1_tirangel.fs">
+      <Filter>셰이더 파일</Filter>
+    </None>
+    <None Include="Shaders\T1_tirangel.vs">
+      <Filter>셰이더 파일</Filter>
+    </None>
+    <None Include="Shaders\T2_tirangel.fs">
+      <Filter>셰이더 파일</Filter>
+    </None>
+    <None Include="Shaders\T2_tirangel.vs">
+      <Filter>셰이더 파일</Filter>
+    </None>
+  </ItemGroup>
+</Project>

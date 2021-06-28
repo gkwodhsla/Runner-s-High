@@ -1,0 +1,31 @@
+#version 330 core
+in vec3 fragPos;
+in vec3 normal;
+out vec4 fragmentColor;
+uniform vec3 lightPos;
+uniform vec3 lightColor;
+uniform vec3 objectColor;
+uniform vec3 viewPos;
+
+in vec2 TexCoord;
+uniform sampler2D outTexture; 
+
+
+void main()
+{
+float ambientLight=0.6f;
+vec3 ambient=ambientLight*lightColor;
+vec3 normalVector=normal;
+vec3 lightDir=normalize(fragPos-lightPos);
+float diffuseLight=max(dot(normal,lightDir),0.0f);
+vec3 diffuse=diffuseLight*lightColor;
+int shininess=10;
+vec3 normVector=normal;
+vec3 viewDir=normalize(fragPos-viewPos);
+vec3 reflectDir=reflect(lightDir,normVector);
+float specularColor=max(dot(viewDir,reflectDir),0.0);
+specularColor=pow(specularColor,shininess);
+vec3 specular=specularColor*lightColor;
+vec3 result=(ambient+diffuse+specular)*objectColor;
+fragmentColor = vec4(result,1.0f) *  texture (outTexture, TexCoord);;
+}
